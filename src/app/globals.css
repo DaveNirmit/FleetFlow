@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .status-pill {
+    @apply px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border;
+  }
+  .status-pill-green {
+    @apply bg-emerald-50 text-emerald-600 border-emerald-200;
+  }
+  .status-pill-yellow {
+    @apply bg-amber-50 text-amber-600 border-amber-200;
+  }
+  .status-pill-red {
+    @apply bg-red-50 text-red-600 border-red-200;
+  }
+  .status-pill-blue {
+    @apply bg-blue-50 text-blue-600 border-blue-200;
+  }
+}
