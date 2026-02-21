@@ -39,7 +39,7 @@ Restart the development server after adding these.
 npm install
 npm run dev
 
-Open http://localhost:3000 in your browser.
+
 
 📦 Database
 
@@ -58,4 +58,5 @@ maintenance_logs
 📌 Status
 
 Core functionality implemented.
+
 Supabase integration working.
