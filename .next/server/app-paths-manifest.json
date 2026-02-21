@@ -1,13 +1,7 @@
 {
-  "/_not-found": "app/_not-found.js",
-  "/api/dispatch/route": "app/api/dispatch/route.js",
-  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/(dashboard)/dispatch/page": "app/(dashboard)/dispatch/page.js",
-  "/(dashboard)/drivers/page": "app/(dashboard)/drivers/page.js",
-  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
-  "/(dashboard)/expenses/page": "app/(dashboard)/expenses/page.js",
-  "/(dashboard)/maintenance/page": "app/(dashboard)/maintenance/page.js",
-  "/(dashboard)/reports/page": "app/(dashboard)/reports/page.js",
-  "/(dashboard)/vehicles/page": "app/(dashboard)/vehicles/page.js"
+  "/register/page": "app/register/page.js",
+  "/forgot-password/page": "app/forgot-password/page.js",
+  "/login/page": "app/login/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js"
 }

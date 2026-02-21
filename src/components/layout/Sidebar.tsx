@@ -30,48 +30,48 @@ const Sidebar = () => {
     ];
 
     return (
-        <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-slate-200 flex flex-col z-50 shadow-sm">
-            <div className="p-6 flex items-center gap-3 border-b border-slate-50">
-                <div className="h-8 w-8 bg-blue-600 rounded flex items-center justify-center">
+        <aside className="fixed left-0 top-0 h-screen w-64 bg-odoo-purple flex flex-col z-50 shadow-lg">
+            <div className="p-6 flex items-center gap-3 border-b border-white/10">
+                <div className="h-8 w-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/20">
                     <Truck className="text-white h-5 w-5" />
                 </div>
-                <span className="text-xl font-bold text-slate-800 tracking-tight">FleetFlow</span>
+                <span className="text-xl font-bold text-white tracking-tight">FleetFlow</span>
             </div>
 
-            <nav className="flex-1 mt-6 px-4 space-y-1">
+            <nav className="flex-1 mt-6 px-3 space-y-1">
                 {menuItems.map((item) => {
                     const isActive = pathname === item.href;
                     return (
                         <Link
                             key={item.href}
                             href={item.href}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all group ${isActive
-                                ? 'bg-blue-50 text-blue-600 font-bold'
-                                : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
+                            className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all group ${isActive
+                                ? 'bg-white/10 text-white font-semibold'
+                                : 'text-white/70 hover:bg-white/5 hover:text-white'
                                 }`}
                         >
-                            <item.icon className={`h-5 w-5 ${isActive ? 'text-blue-600' : 'group-hover:text-blue-500 transition-colors'}`} />
-                            <span className="text-sm">{item.label}</span>
+                            <item.icon className={`h-5 w-5 ${isActive ? 'text-white' : 'text-white/50 group-hover:text-white transition-colors'}`} />
+                            <span className="text-sm font-medium">{item.label}</span>
                         </Link>
                     );
                 })}
             </nav>
 
-            <div className="p-4 border-t border-slate-50 mt-auto">
-                <button className="flex w-full items-center gap-3 px-4 py-3 rounded-xl text-slate-500 hover:bg-rose-50 hover:text-rose-600 transition-all">
+            <div className="p-4 border-t border-white/10 mt-auto">
+                <button className="flex w-full items-center gap-3 px-4 py-3 rounded-lg text-white/70 hover:bg-rose-500/10 hover:text-rose-400 transition-all">
                     <LogOut className="h-5 w-5" />
                     <span className="text-sm font-medium">Logout</span>
                 </button>
             </div>
 
-            <div className="p-4 border-t border-slate-100 bg-slate-50/50">
+            <div className="p-4 border-t border-white/10 bg-black/10">
                 <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center border-2 border-white shadow-sm overflow-hidden text-blue-600 font-bold text-xs ring-2 ring-blue-50/50">
+                    <div className="h-10 w-10 rounded-full bg-white/20 flex items-center justify-center border border-white/30 shadow-sm overflow-hidden text-white font-bold text-xs">
                         JD
                     </div>
                     <div className="overflow-hidden">
-                        <p className="text-xs font-bold text-slate-900 truncate">John Doe</p>
-                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-tighter">Fleet Manager</p>
+                        <p className="text-sm font-bold text-white truncate">John Doe</p>
+                        <p className="text-[10px] text-white/50 font-medium uppercase tracking-tighter">Fleet Manager</p>
                     </div>
                 </div>
             </div>

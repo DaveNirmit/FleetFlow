@@ -7,6 +7,18 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                odoo: {
+                    purple: '#714B67',
+                    'purple-light': '#875A7B',
+                    'purple-dark': '#4E3447',
+                    teal: '#00A09D',
+                    'teal-light': '#24B9B6',
+                    'teal-dark': '#008B89',
+                    bg: '#F8F9FA',
+                    sidebar: '#2B2B2B',
+                }
+            },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':

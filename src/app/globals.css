@@ -23,15 +23,15 @@ body {
     @apply px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border;
   }
   .status-pill-green {
-    @apply bg-emerald-50 text-emerald-600 border-emerald-200;
+    @apply bg-emerald-50 text-emerald-700 border-emerald-200 font-bold;
   }
   .status-pill-yellow {
-    @apply bg-amber-50 text-amber-600 border-amber-200;
+    @apply bg-amber-50 text-amber-700 border-amber-200 font-bold;
   }
   .status-pill-red {
-    @apply bg-red-50 text-red-600 border-red-200;
+    @apply bg-rose-50 text-rose-700 border-rose-200 font-bold;
   }
   .status-pill-blue {
-    @apply bg-blue-50 text-blue-600 border-blue-200;
+    @apply bg-odoo-teal/10 text-odoo-teal border-odoo-teal/20 font-bold;
   }
 }
