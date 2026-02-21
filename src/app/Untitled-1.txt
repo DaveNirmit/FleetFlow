@@ -1,7 +1,0 @@
-# FleetFlow | Digital Logistics Hub
-
-
-# The Central Nervous System for Your Logistics.
-Replace manual logs with a rule-based digital hub. Optimize lifecycle, monitor safety, and audit financial performance in one premium dashboard.
-[Dashboard Preview](http://localhost:3000/dashboard)
-© 2024 FleetFlow • Precision Logistics Management
